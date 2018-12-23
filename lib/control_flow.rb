@@ -2,7 +2,13 @@
 
 # Return the argument with all its lowercase characters removed.
 def destructive_uppercase(str)
-
+  new_str = ""
+  str.each_char do |char|
+    if char == char.upcase
+      new_str += char
+    end
+  end
+  return new_str
 end
 
 # Return the middle character of a string. Return the middle two characters if
